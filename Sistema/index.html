@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Acadêmico - Etec</title>
+</head>
+
+<body background="livros.jpg">
+    <h1>Sistema Acadêmico - Etec</h1>
+    <form action="sistema.php" method="POST">
+        <fieldset>
+            <legend>
+                <b>Dados Cadastrais</b>
+            </legend>
+            <table>
+                <tr>
+                    <th>Nome:</th>
+                    <td><input type="text" name="nome" size="70"> </td>
+                </tr>
+                <tr>
+                    <th>E-mail:</th>
+                    <td><input type="email" name="email" size="50"></td>
+                </tr>
+                <tr>
+                    <th>Senha:</th>
+                    <td><input type="password" name="senha" size="10"></td>
+                </tr>
+                <tr>
+                    <th>Gênero:</th>
+                    <td>
+                        <select name="genero">
+                            <option>
+
+                            </option>
+                            <option>
+                                Masculino
+                            </option>
+                            <option>
+                                Feminino
+                            </option>
+                            <option>
+                                Outros
+                            </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Função</th>
+                    <td><input type="radio" name="funcao" value="Admin">Administrativo
+                        <input type="radio" name="funcao" value="Alu">Aluno
+                        <input type="radio" name="funcao" value="Prof">Professor
+                    </td>
+                </tr>
+                <tr>
+                    <th>Data de Nascimento</th>
+                    <td><input type="date" name="data_nascimento"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="submit" name="cadastrar" value="Cadastrar">
+        <input type="submit" name="cadastrar" value="Limpar">
+    </form>
+</body>
+
+</html>
